@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @font-face {
+      font-family: "HelveticaNeue";
+      src: url(./videos/Comfortaa.woff2);
+    }
+    body, html{
+      font-family: "HelveticaNeue" !important;
+      font-size: medium;
+    }
+
+            /* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+html {
+  box-sizing: border-box;
+  height: 100%; 
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 2.5em 0; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container3 {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px; }
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid-1-5 {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(4px);
+  border: 2px solid #5d4e65;
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all .2s ease-in-out; }
+  @media screen and (min-width: 700px) {
+    .grid-1-5 {
+      float: left;
+      width: 50%; }
+    .grid-1-5:nth-child(odd) {
+      clear: left; } }
+  @media screen and (min-width: 800px) {
+    .grid-1-5 {
+      width: 33.3333333%; }
+    .grid-1-5:nth-child(3n+1) {
+      clear: left; }
+    .grid-1-5:nth-child(odd) {
+      clear: none; } }
+  @media screen and (min-width: 1120px) {
+    .grid-1-5 {
+      width: 20%; }
+    .grid-1-5:nth-child(odd), .grid-1-5:nth-child(3n+1) {
+      clear: none; } }
+
+.grid-1-5:hover {
+  background-color: #91bfe9;
+  border-top: 2px solid #ec7a37;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 0px 10px 0px #323232;
+  transform: scale(1.025);
+  z-index: 2; 
+  backdrop-filter: blur(0px) !important;
+}
+  .grid-1-5:hover:before, .grid-1-5:hover:after {
+    content: "";
+    position: absolute;
+    background-color: #f67d35;
+    top: -2px;
+    bottom: -2px;
+    width: 2px; 
+    backdrop-filter: blur(0px) !important;
+  }
+  .grid-1-5:hover:before {
+    left: -2px; }
+  .grid-1-5:hover:after {
+    right: -2px; }
+  .grid-1-5:hover .button {
+    background-color: #eed236; 
+    color: #000000; 
+  backdrop-filter: blur(0px) !important;
+
+  }
+  .grid-1-5:hover h2, .grid-1-5:hover h3, .grid-1-5:hover p, .grid-1-5:hover ul {
+  backdrop-filter: none !important;
+
+  }
+
+h2, h3, p, ul {
+  margin: 0; 
+  backdrop-filter: none !important;
+
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em; }
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em; }
+
+p {
+  font-size: 0.875em; }
+
+p, ul {
+  margin: 0 0 1.5em; }
+
+ul {
+  color: #796583;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0; }
+  ul li {
+    margin: 0 0 0.8333333333333333em; }
+
+.button3 {
+  background-color: #5759e9;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px; }
+
+.uppercase, .button, h2 {
+  text-transform: uppercase; }
+
+sup, .small {
+  font-size: 0.6125em; }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 1.6rem !important;
+}
+.close-btn a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 900;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    width: 200px;
+    height: auto;
+}
+.gradient-background3 {
+  /* background: linear-gradient(262deg,#5452d9,#5255e6,#efff11,#a9fa5b,#ffffff); */
+  background: linear-gradient(90deg, rgba(241,255,63,1) 0%, rgba(101,186,255,1) 100%);
+  background-size: 300% 300%;
+  animation: gradient-animation 25s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-hero {
+    background: url('./videos/heath-pose-1.jpg') no-repeat center center/contain;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+ul {
+  color: #000000 !important;
+  font-weight: 900;
+  backdrop-filter: blur(0px) !important;
+}
+    </style>
+    <link rel="stylesheet" href="priceing.scss">
+</head>
+<!-- add class for animation .gradient-background3  -->
+<body class="bg-hero">
+    <div class="close-btn">
+        <a href="index.html" style="font-size: 18px;">Back</a>
+    </div>
+    <a href="index.html"><img src="logo.png" alt="logo" border="0" class="logo"></a>
+    <div class="container3 group">
+      <center><h1 style="color: rgb(255, 255, 255);text-shadow: 2px 2px 1px rgb(0, 0, 0);text-transform: capitalize !important;">SUBSCRIPTION PLANS</h1></center>
+		<div class="grid-1-5">
+			<h2>10 Day Challenge</h2>
+			<h3><span class="uppercase">Free</span></h3>
+			<p>Get a taste of the exercise and rehab programs for 10 Days</p>
+			<ul>
+				<li>Limited Genralized Programs</li>
+			</ul>
+			<a href="challenge.html" class="button3">Go</a>
+		</div>
+		<div class="grid-1-5">
+			<h2>1 Months</h2>
+			<h3><sup>₹</sup>490<span class="small">/mo</span></h3>
+			<p>Get a taste of the exercise and rehab programs for 1 month.</p>
+			<ul>
+				<li>Email Support</li>
+				<li>Phone Support</li>
+				<li>Selected Programs Access</li>
+			</ul>		
+			<a href="" class="button3">Select</a>	
+		</div>
+
+		<div class="grid-1-5">
+			<h2>3 Months</h2>
+			<h3><sup>₹</sup>1,470</h3>
+			<p>Get a taste of the exercise and rehab programs for 3 month.</p>
+			<ul>
+				<li>Email Support</li>
+				<li>Phone Support</li>
+				<li>All Programs Access</li>
+			</ul>	
+			<a href="" class="button3">Select</a>		
+		</div>
+        <div class="grid-1-5">
+			<h2>12 Months</h2>
+			<h3><sup>₹</sup>3,900</h3>
+			<p>Get a taste of the exercise and rehab programs for 12 month.</p>
+			<ul>
+				<li>Email Support</li>
+				<li>Phone Support</li>
+				<li>All Programs Access</li>
+			</ul>	
+			<a href="" class="button3">Select</a>		
+		</div>
+		<div class="grid-1-5">
+			<h2>Book an Appointment</h2>
+			<h3><span class="uppercase">Let's Meet</span></h3>
+			<p>1M+ monthly visits</p>
+			<ul>
+                <li>1 on 1 Consultation</li>
+				<li>Email Support</li>
+				<li>Phone Support</li>
+				<li>Dedicated Environment</li>
+				<li>Customized Plans and Workout</li>
+			</ul>
+			<a href="" class="button3">Book Now</a>
+		</div>		
+	</div>
+</body>
+</html>

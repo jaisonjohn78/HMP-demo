@@ -1,0 +1,89 @@
+*, html, body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media only screen and (max-width: 767px) {
+    .nav-principal .page-padding {
+        height: 58px !important;
+    }
+    .nav-logo-position{
+        top: 0px !important;
+        margin-top: 4px !important;
+        align-items: flex-end !important;
+    }
+    .nav-logo-position img {
+        width: 29vw !important;
+        margin-top: 0 !important;
+    }
+    .video-header, .video-header video, .video-header .viewport-header{
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+    .services2 {
+        display: contents;
+    }
+    .floating-sec{
+        font-size: 1rem !important;
+        left: -28vw !important;
+    }
+    .carousel p {
+        font-size: 1rem !important;
+    }
+    .level-button-opacity {
+        font-size: 10px !important;
+    }
+    .buton {
+        min-width: 20em !important;
+        font-size: 6px !important;
+        padding: 4px 8px !important;
+    }
+    .container3 h3{
+        font-size: 24px !important;
+    }
+    .container3 h4 {
+        font-size: 20px !important;    
+    }
+    .container3 p {
+        font-size: 1.2rem !important;
+    }
+    #subcription-btn , #consult-btn {
+        font-size: 12px !important;
+    }
+    #para-intro {
+        padding: 0 0 !important;
+    }
+    #para-intro-1 ,  #para-intro-2{
+        padding: 0 0 !important;
+        width: 84vw !important; 
+        margin-left: 0 !important;
+    }
+    #wch {
+        width: 80vw !important;
+        margin: 0 auto !important;
+        padding: 0 12px !important;
+    }
+    #hma {
+        margin: 0 !important;
+    }
+    #para-intro-2 {
+        width: 60vw !important;
+    }
+    .cursor {
+        display: none !important;
+    }
+    #left-ss {
+        width: 100% !important;
+    }
+    #myVideo {
+     display: block;
+        
+    }
+    .footer-links-component {
+        font-size: 3.5px !important;
+    }
+}
