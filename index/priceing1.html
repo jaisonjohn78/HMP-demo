@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price List</title>
+    <style>
+        
+    @font-face {
+      font-family: "HelveticaNeue";
+      src: url(./videos/Comfortaa.woff2);
+    }
+    body, html{
+      font-family: "HelveticaNeue" !important;
+    }
+        .logo{
+            position: fixed;
+            top: 5px;
+            right: 15px;
+        }
+        html{
+    height:100%;
+    width:100%;
+    margin: 0px;
+}
+
+body{
+    height:100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.div-left{
+    /* background-color: darkblue; */
+    height: 100%;
+    width:50%;
+    margin: 0px;
+    float: left;
+    position: fixed;
+}
+
+#clear {
+    clear: both;
+}
+
+.div-right-1{
+    background-color: yellow;
+    height: 100%;
+    width: 50%;
+    margin: 0px;
+    float: right;
+} 
+
+.div-right-2{
+    background-color: aqua;
+    height: 100%;
+    width: 50%;
+    margin:0px;
+    float: right;
+}
+h1 {
+    font-family: 'Helvetica';
+    font-size: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 30px;
+}
+.container h2 {
+    font-size: 30px;
+    color: #2371e0;
+}
+.container .form {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.container .form .form-input {
+    width: 32%;
+}
+.container .form .form-input input {
+    display: none;
+}
+.container .form .form-input label {
+display: block;
+background: #fdfdfd;
+border: 1px solid #eee;
+text-align: center;
+padding: 15px;
+box-shadow: 2px 2px 5px 2px #ddd;
+transition: all 200ms ease-in-out;
+}
+.container .form .form-input label .title {
+    font-size: 18px;
+    color: #2371e0;
+    font-weight: 600;
+}
+.container .form .form-input label .price {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0px 2px;
+    color: #222;
+}
+.container .form .form-input label p {
+    color: #888;
+    font-size: 15px;
+}
+.container .form .form-input label .desc {
+    color: #555;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.container .form .form-input label:hover {
+    border: 1px solid #2371e0;
+    cursor: pointer;
+}
+.container .form .form-input input:checked + label {
+    background: #2371e0;
+    border: 1px solid #2371e0;
+
+}
+.container .form .form-input input:checked + label .title {
+    color: #eee;
+}
+.container .form .form-input input:checked + label .price {
+    color: #eee;
+}
+.container .form .form-input input:checked + label p {
+    color: #eee;
+}
+.container .form .form-input input:checked + label .desc {
+    color: #eee;
+}
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="" width="150px" class="logo">
+
+
+    <div class= "div-left div-left-small">
+        <section>
+            <center><h1>Subsciptions</h1></center>
+            
+
+            <div class="container">
+                <div class="form">
+
+                    
+                    <div class="form-input">
+                        <input type="radio" name="Plan" id="plan-free" value="free">
+                        <label for="plan-free">
+                            <div>
+                                <div class="title">Free</div>
+                                <div class="price">$0</div>
+                                <p>Per Month</p>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsum omnis nesciunt quia voluptatibus dolorum optio autem a iure assumenda soluta laboriosam dolores .
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+
+                    <div class="form-input">
+                        <input type="radio" name="Plan" id="plan-starter" value="starter">
+                        <label for="plan-starter">
+                            <div>
+                                <div class="title">starter</div>
+                                <div class="price">$0</div>
+                                <p>Per Month</p>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsum omnis nesciunt quia voluptatibus dolorum optio autem a iure assumenda soluta laboriosam dolores .
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+
+
+                    <div class="form-input">
+                        <input type="radio" name="Plan" id="plan-premium" value="premium">
+                        <label for="plan-premium">
+                            <div>
+                                <div class="title">premium</div>
+                                <div class="price">$0</div>
+                                <p>Per Month</p>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsum omnis nesciunt quia voluptatibus dolorum optio autem a iure assumenda soluta laboriosam dolores .
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+    <div class= "div-right-1 div-right-1-small">
+    </div>
+    <div id="clear"></div>
+    <div class= "div-right-2 div-right-2-small">
+    </div>
+    <div class="div-right-3 div-right-3-small">
+    </div>
+    <div id="clear"></div>
+    <div class= "div-right-2 div-right-2-small" style="background-color: rgb(255, 255, 255);">
+    </div>
+
+    
+
+</body>
+</html>

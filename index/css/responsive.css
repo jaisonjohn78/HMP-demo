@@ -86,4 +86,14 @@
     .footer-links-component {
         font-size: 3.5px !important;
     }
+    .left-1 h2, .right-1 h2 {
+       
+        bottom: 10px;
+        left: 5px !important;
+        font-size: 12px !important;
+        
+      }
+      .left-1 h2{
+        left: 15px !important;
+    }
 }
